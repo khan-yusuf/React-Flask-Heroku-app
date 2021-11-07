@@ -11,7 +11,6 @@ CORS(app)
 
 # dictionary that holds first and last names of my name and spider-man actors
 dict = {
-    "Yusuf" : "Khan",
     "Tom" : "Holland",
     "Toby" : "Maguire",
     "Peter" : "Parker",

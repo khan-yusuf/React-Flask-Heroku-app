@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from '@mui/material/Button';
+import '../App.css';
 
 export default function MyComponent() {
     const [name, setName] = useState(""); //for firstname for user
@@ -7,13 +8,12 @@ export default function MyComponent() {
     return(
         <div>
           <form>
-            <label>Type in your first name:
+            <h>Type in the first name of a spiderman actor! </h><br/>
               <input //input form for getting firstname from user
                 type="text"
                 value={name}
                 onChange = {(e) => setName(e.target.value)} //allows user to type in textbox
-              />
-            </label><br />
+              /><br/>
             <Button variant="outlined"
               onClick={
                 () => {
@@ -24,8 +24,8 @@ export default function MyComponent() {
                     }).catch(error => console.log(error))
                 }
               }
-            >Submit</Button>
-            <label>Your last name is: {lastName}</label> 
+            >Submit</Button><br/><br/>
+            <label>His last name is: {lastName}</label> 
           </form>
         </div>
     );
