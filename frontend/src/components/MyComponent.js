@@ -17,7 +17,7 @@ export default function MyComponent() {
             <Button variant="outlined"
               onClick={
                 () => {
-                  fetch("http://127.0.0.1:5000/find/" + name) //the address to fetch, uses routing
+                  fetch("/find/" + name) //the address to fetch, uses routing
                     .then(response => response.json())
                     .then(data => {
                       setLastName(data.output) //updates value of Lastname
